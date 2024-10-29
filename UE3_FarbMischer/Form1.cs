@@ -6,5 +6,13 @@ namespace UE3_FarbMischer
         {
             InitializeComponent();
         }
+
+        private void CalculateColor(object sender, EventArgs e)
+        {
+            pan.BackColor = Color.FromArgb(trkRed.Value, trkGreen.Value, trkBlue.Value);
+            lblRed.Text = trkRed.Value.ToString();
+            lblGreen.Text = trkGreen.Value.ToString();
+            lblBlue.Text = trkBlue.Value.ToString();
+        }
     }
 }
